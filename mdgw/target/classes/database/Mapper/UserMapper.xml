@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="database.Mapper.UserMapper">
+
+    <!--    <resultMap id="resultMap" type="message.OrderMarket_300192">-->
+    <!--        <result column="OrdType" property="ordType" />-->
+    <!--    </resultMap>-->
+
+    <!--    <select id="selectAll" resultMap="resultMap">-->
+    <!--        select * from message_300192;-->
+    <!--    </select>-->
+    <!--    <select id="selectAll" resultType="message.OrderMarket_300192">-->
+    <!--        select * from message_300192;-->
+    <!--    </select>-->
+
+    <select id="selectUser" resultType="database.User">
+        select * from user;
+    </select>
+
+</mapper>
